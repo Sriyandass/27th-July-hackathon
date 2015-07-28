@@ -15,7 +15,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
+<<<<<<< HEAD
         android:hint="Ex: FileName"
+=======
+<<<<<<< HEAD
+        android:hint="Ex: FileName"
+=======
+        android:hint="Ex: FileName.txt"
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
+>>>>>>> 0065cc97550d395b31dfc6ecf497a22d33d43012
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -28,7 +36,14 @@
         android:text="Continue"
         android:id="@+id/button4"
         android:onClick="saveName"
+<<<<<<< HEAD
         android:background="#2BA834"
+=======
+<<<<<<< HEAD
+        android:background="#2BA834"
+=======
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
+>>>>>>> 0065cc97550d395b31dfc6ecf497a22d33d43012
         android:layout_below="@+id/editText3"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"

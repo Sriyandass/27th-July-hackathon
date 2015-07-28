@@ -5,11 +5,19 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
         android:label="Hack27july"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="Hack27july" >
+=======
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+>>>>>>> 0065cc97550d395b31dfc6ecf497a22d33d43012
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +32,7 @@
         <activity android:name=".pop"
             android:theme="@style/AppTheme.CustomTheme"
         ></activity>
+<<<<<<< HEAD
         <activity android:name=".main_after_input"
             android:label="Hack27july">
             <intent-filter>
@@ -31,6 +40,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+=======
+>>>>>>> 0065cc97550d395b31dfc6ecf497a22d33d43012
     </application>
 
 </manifest>
