@@ -5,27 +5,37 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+<<<<<<< HEAD
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+=======
+import android.view.View;
+import android.widget.EditText;
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
 
 /**
  * Created by Banukumar A on 27-07-2015.
  */
 public class pop extends Activity {
 
+<<<<<<< HEAD
     Button button4;
     EditText fName;
     String flName;
     dbhander mydbhandler;
+=======
+    EditText fName;
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popupwindow);
+<<<<<<< HEAD
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -53,6 +63,16 @@ public class pop extends Activity {
                 }
             }
         });
+=======
+        fName=(EditText)findViewById(R.id.editText3);
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+        double width = dm.widthPixels;
+        double hight = dm.heightPixels;
+
+        getWindow().setLayout((int)width,(int)(hight*.6));
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
     }
 
     public void saveName(View view) {

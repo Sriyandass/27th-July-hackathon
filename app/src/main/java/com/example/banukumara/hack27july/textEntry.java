@@ -22,7 +22,11 @@ public class textEntry extends Activity {
 
     Button button2;
     EditText message;
+<<<<<<< HEAD
     String Message;
+=======
+    String Message, flName;
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
 
     public static final String DEFAULT="N/A";
     @Override
@@ -36,12 +40,37 @@ public class textEntry extends Activity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 Message = message.getText().toString();
                 if (Message.matches("")) {
                     Toast.makeText(getBaseContext(), "Please enter some content.", Toast.LENGTH_LONG).show();
                 }
                 else {
                     startActivity(new Intent(textEntry.this, pop.class));
+=======
+                startActivity(new Intent(textEntry.this, pop.class));
+                SharedPreferences sharedPreferences = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                Message = message.getText().toString();
+                flName = sharedPreferences.getString("fileName", DEFAULT);
+                if (flName.equals(DEFAULT)) {
+                    Toast.makeText(getBaseContext(), "No data was found", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    try {
+                        FileOutputStream fou = openFileOutput(flName, Context.MODE_PRIVATE);
+                        OutputStreamWriter osw = new OutputStreamWriter(fou);
+                        try {
+                            osw.write(Message);
+                            osw.flush();
+                            osw.close();
+                            Toast.makeText(getBaseContext(), "Data saved!", Toast.LENGTH_LONG).show();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
                 }
             }
         });

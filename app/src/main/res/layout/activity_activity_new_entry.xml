@@ -17,14 +17,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:gravity="top"
+<<<<<<< HEAD
         android:background="#D8D8D8"
+=======
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView3"
+<<<<<<< HEAD
         android:layout_above="@+id/button2"
         android:hint="Hi! How was today? :)"/>
+=======
+        android:layout_above="@+id/button2" />
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
 
     <Button
         android:layout_width="wrap_content"
@@ -32,7 +39,10 @@
         android:text="Save"
         android:id="@+id/button2"
         android:onClick="fileNameEntry"
+<<<<<<< HEAD
         android:background="#2BA834"
+=======
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
         android:layout_above="@+id/button3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -45,7 +55,10 @@
         android:text="Exit"
         android:id="@+id/button3"
         android:onClick="goToHome"
+<<<<<<< HEAD
         android:background="#0E9217"
+=======
+>>>>>>> c4958d3ad0f95e4ba79fa319e05bf11951a12f2a
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
